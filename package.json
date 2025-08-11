@@ -16,21 +16,30 @@
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
   "dependencies": {
+    "@langchain/community": "^0.3.50",
+    "@langchain/core": "^0.3.68",
+    "@langchain/langgraph": "^0.4.3",
+    "@langchain/openai": "^0.6.7",
     "@strapi/plugin-cloud": "5.21.0",
     "@strapi/plugin-users-permissions": "5.21.0",
     "@strapi/strapi": "5.21.0",
     "fs-extra": "^10.0.0",
+    "langchain": "^0.3.30",
     "mime-types": "^2.1.27",
-    "pg": "8.8.0",
+    "pg": "^8.8.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
-    "styled-components": "^6.0.0"
+    "styled-components": "^6.0.0",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/pg": "^8.15.5",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "jest": "^30.0.5",
+    "supertest": "^7.1.4",
     "typescript": "^5"
   },
   "engines": {
@@ -40,5 +49,13 @@
   "strapi": {
     "uuid": "314e73b9-b5ee-49e6-8f82-6d4064f946f6",
     "installId": "491acd526e8d1fa31dfb24f11b81188312f20b90f6e73c31cdee553796e0c0ab"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      ".tmp",
+      ".cache"
+    ],
+    "testEnvironment": "node"
   }
 }

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "context_files",
+  "info": {
+    "singularName": "context-file",
+    "pluralName": "context-files",
+    "displayName": "ContextFile"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "vectorStoreId": {
+      "type": "text"
+    }
+  }
+}
