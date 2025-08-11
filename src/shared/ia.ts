@@ -21,8 +21,6 @@ export const DB_CONFIG: PoolConfig = {
   ssl: { rejectUnauthorized: false },
 }
 
-console.log(DB_CONFIG)
-
 export const getVectorStore = async () => {
   const embeddings = new OpenAIEmbeddings({ model: EMBEDDING_MODEL })
   const vectorStorePromise = PGVectorStore.initialize(embeddings, {
